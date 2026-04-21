@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pro-Semántico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <article>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información de Usuario</legend>
+
+                    <label for="user">Nombre de usuario:</label>
+                    <input type="text" id="user" name="user" required>
+
+                    <label for="correo">Email institucional:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <label for="clave">Contraseña segura:</label>
+                    <input type="password" id="clave" name="clave" required>
+
+                    <label for="pais">País de residencia:</label>
+                    <input type="text" id="pais" name="pais" list="paises-sugeridos">
+                    <datalist id="paises-sugeridos">
+                        <option value="Argentina">
+                        <option value="Chile">
+                        <option value="Colombia">
+                        <option value="España">
+                        <option value="México">
+                    </datalist>
+
+                    <button type="submit">Crear Perfil</button>
+                  
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>No me haga preguntas dificiles</p>
+    </footer>
+
+</body>
+</html>
